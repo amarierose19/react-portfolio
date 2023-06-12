@@ -1,22 +1,51 @@
 import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contact() {
+  const [state, handleSubmit] = useForm("mlekqezw");
+  if (state.succeeded) {
+      return <p>I look forward to speaking with you!</p>;
+  }
   return (
     <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <h1>Contact Me</h1>
+      <form onSubmit={handleSubmit}>
+      <input
+        id="name"
+        type="name" 
+        name="name"
+        placeholder='Name...'
+      />
+      <ValidationError 
+        prefix="Name" 
+        field="name"
+        errors={state.errors}
+      />
+      <input
+        id="email"
+        type="email" 
+        name="email"
+        placeholder='Email...'
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        id="message"
+        name="message"
+        placeholder='Message...'
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting}>
+        Send
+      </button>
+    </form>
     </div>
   );
 }

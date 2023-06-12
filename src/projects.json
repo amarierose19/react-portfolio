@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Project 1",
+        "description": "this is my description blah blah blah blah",
+        "image": "./assets/images/test.png",
+        "github": "https://github.com/amarierose19/Porfolio",
+        "live": "https://amarierose19.github.io/Porfolio/"
+    },
+    {
+        "name": "Project 2",
+        "description": "this is my description blah blah blah blah",
+        "image": "./assets/images/test.png",
+        "github": "https://github.com/amarierose19/Porfolio",
+        "live": "https://amarierose19.github.io/Porfolio/"
+    }
+]
