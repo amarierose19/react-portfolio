@@ -83,3 +83,21 @@ form button {
 .card button {
   margin-bottom: 30px;
 }
+
+.education {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume h1 {
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+.resume p {
+  color: rgb(190, 190, 190);
+}
+
+.resume ul li {
+  color: rgb(190, 190, 190);
+}
