@@ -14,7 +14,11 @@ export default function PortfolioContainer() {
       return <About />;
     }
     if (currentPage === 'Portfolio') {
-      return <Portfolio />;
+      return  (
+        <div className='projects'>
+          <Portfolio />
+        </div>
+      )
     }
     if (currentPage === 'Contact') {
       return <Contact />;

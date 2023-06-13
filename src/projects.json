@@ -1,16 +1,16 @@
 [
     {
-        "name": "Project 1",
-        "description": "this is my description blah blah blah blah",
-        "image": "./assets/images/test.png",
-        "github": "https://github.com/amarierose19/Porfolio",
-        "live": "https://amarierose19.github.io/Porfolio/"
+        "name": "JavaScript Quiz",
+        "description": "HTML / CSS/ JS",
+        "image": "./assets/images/quiz.png",
+        "github": "https://github.com/amarierose19/creating-quiz-challenge",
+        "live": "https://amarierose19.github.io/creating-quiz-challenge/"
     },
     {
-        "name": "Project 2",
-        "description": "this is my description blah blah blah blah",
-        "image": "./assets/images/test.png",
-        "github": "https://github.com/amarierose19/Porfolio",
-        "live": "https://amarierose19.github.io/Porfolio/"
+        "name": "Horiseon",
+        "description": "HTML / CSS",
+        "image": "./assets/images/refactor.png",
+        "github": "https://github.com/amarierose19/Code-Refactor",
+        "live": "https://amarierose19.github.io/Code-Refactor/"
     }
 ]

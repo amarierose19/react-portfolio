@@ -2,8 +2,7 @@ import React from 'react';
 import projects from "../../projects.json"
 
 export default function Portfolio() {
-  return projects.map((proj) => (
-    <div className='projects'>
+   return projects.map((proj) => (
       <div key={proj.name} className='card'>
         <img src={proj.image}></img>
         <h2>
@@ -19,6 +18,5 @@ export default function Portfolio() {
           </button>
         </div>
       </div>
-    </div>
-  ));
+   ))
 }
